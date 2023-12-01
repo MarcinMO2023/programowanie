@@ -1,0 +1,19 @@
+.brand__listItem {
+    border: 14px solid rgb(43, 255, 0);
+    border-width: 2px 2px;
+    border-style: ridge;
+    border-color: aqua;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 1%;
+    list-style-type: none;
+}
+
+.brand__list {
+    margin-right: 40px;
+    text-align: left;
+}
+
+.brand__series {
+    background-color: rgb(226, 226, 226);
+}

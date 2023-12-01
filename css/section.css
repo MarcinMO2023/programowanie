@@ -1,0 +1,21 @@
+.section {
+    padding: 20px;
+}
+
+.section__subtitle {
+    color: rgb(72 0 255);
+    background-color: #32e22b;
+    border-radius: 20px;
+}
+
+.section__box {
+    color: rgb(0, 0, 0);
+}
+
+.section__interestingItem {
+    color: rgb(0, 139, 7);
+}
+
+.section {
+    padding: 20px;
+}

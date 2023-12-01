@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    /* box-sizing: inherit; */
+}
+
+.link {
+    color: rgb(17, 0, 255);
+}
+
+.body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(182, 250, 235);
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.dark {
+    background: rgb(143, 140, 140)
+}
+
+.caption {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.name {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.end {
+    outline-style: inset;
+    outline-offset: -20px;
+    outline-width: 5px;
+    padding: 10px
+}
