@@ -5,54 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJA PIERWSZA STRONA MO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/brand.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
-    <title>Currency Converter</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@500&family=Noto+Serif+Khojki&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="body">
-    <div class="container">
-        <form class="form js-form">
-            <h1 class="form__header">
-                Kalkulator walut
-            </h1>
-            <p>
-                <label>
-                    <span class="form__labelText">
-                        Kwota w zł:*
-                    </span>
-                    <input class="form__field js-amount" placeholder="Wpisz kwotę w zł" autofocus type="number"
-                        min="0.01" step="0.01" required>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <span class="form__labelText">
-                        Waluta:
-                    </span>
-                    <select class="form__field js-currency">
-                        <option value="USD">Dolar amerykański</option>
-                        <option value="EUR">Euro</option>
-                        <option value="GBP">Funt brytyjski</option>
-                        <option value="TRY">Lira turecka</option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <button class="form__button">Przelicz!</button>
-            </p>
-            <p class="form__result js-result">
-                <strong></strong>
-            </p>
-        </form>
-    </div>
+<nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item">
+            <a href="#Życiorys">Życiorys</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#Mocne-strony">Mocne-strony</a>
+        </li>
+        <li class="navigation__item">
+            <a href="#Osiągnięcia">Osiągnięcia</a>
+        </li>
+        <li class="navigation__item">
+            <a href="images/b.jpg" download="b.jpg">Zdjęcie autka</a>
+        </li>
+    </ul>
+</nav>
 
+<body class="body">
+
+    <header class="header">
+        <h1 class="header__title"> Marcin!</h1>
+    </header>
+    <main>
+        <p>
+            <button class="button1">Usuń nagłówek</button>
+            <button class="button2">Włącz <span class="themeName">ciemny</span> motyw</button>
+        </p>
+        <img class="photo" width="250" height="150"
+            src="https://www.autocentrum.pl/ac-file/gallery-photo/5dd52ede583a0f79c3527428/bmw-seria-7.jpg" alt="bmw">
+        <p>
+            Jeśli chcesz poznać historie BMW wejdź tutaj i dowiedz się jak powsała marka.
+            <a class="link" rel="noreferrer noopener" target="_blank" href="https://pl.wikipedia.org/wiki/BMW"
+                title="Artykół na wikipedii o marce BMW ">
+                Artykóuł o BMW (otwiera sie w nowej krcie)
+            </a>
+        </p>
+        <section id="Życiorys" class="section">
+            <h2 class="section__subtitle"> Życiorys</h2>
+            <div class="section__box">
+                <p>Urodziłem się 27.04.1996r w S---------ch mam 27 lat mieszkam w małym miasteczku. Pracuje w
+                    administracji
+                    <span class="section__interestingItem">Jestem prcownikiem administracji od ponad roku.</span>
+                    <br>Praca w
+                    Urzędzie daje mi
+                    duże możliwości rozwoju osobistego jak i intelektualnego poprzez prace w tej branży nabyłem wiele
+                    nowych
+                    doświadczeń oraz praktyki w pracy z ludzmi i nie tylko.
+                </p>
+                <p>Przed rozpoczęciem pracy studiowałem na Uniwersytecie Przyroodniczo Humanistycznym w S-------h na
+                    wydziale
+                    Nauk Społecznych. Mam licencjat ze specjalizacji MŚP i Magistra z Finanse i Rachunkowość.</p>
+            </div>
+        </section>
+
+        <section id="Mocne-strony" class="section">
+            <h3 class="section__subtitle"> Mocne strony</h3>
+            <p>Mój charakter i sposób bycia można określić słowami, między innymi:
+                <br>-Pracowitość <br>-Zaradność <br>-Uczciwość <br>-Sumienność <br>-Zaangażowanie w powierzone
+                zadania.
+            </p>
+        </section>
+        <section id="Osiągnięcia" class="section">
+            <h4 class="section__subtitle"> Osiągnięcia</h4>
+            <p>Jestem szczęśliwym człowiekiem <b>ponieważ</b> mam Żonę, Syna i marzenia, które należy spełniać.
+                W tej chwili skupiam sie na programowaniu, chciałbym nauczyć się tego zawodu by w przyszłości być
+                doskonałym
+                <strong>frontand developerem</strong> .
+            </p>
+        </section>
+        <div class="tableContainer">
+            <table class="table">
+                <caption class="table__caption"> Moja pierwsza tabela:</caption>
+                <tr class="table__Row">
+                    <th class="table__Cell table__Cell--Header" scope="col">Tytuł </th>
+                    <th class="table__Cell table__Cell--Header" scope="col">Pierwsza kolumna</th>
+                    <th class="table__Cell table__Cell--Header" scope="col">Druga kolumna</th>
+                </tr>
+                <tr class="tableRow">
+                    <th class="table__Cell table__Cell--Header" scope="row">Pierwszy wiersz</th>
+                    <td class="table__Cell">PK.pierwszy wiersz</td>
+                    <td class="table__Cell">DK.pierwszy wiersz</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="table__Cell table__Cell--Header" scope="row">Drugi wiersz</th>
+                    <td class="table__Cell">PK.drugi wiersz</td>
+                    <td class="table__Cell">DK.drugi wiersz</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="table__Cell table__Cell--Header" scope="row">Trzeci wiersz</th>
+                    <td class="table__Cell">PK.trzeci wiersz</td>
+                    <td class="table__Cell">DK.trzeci wiersz</td>
+                </tr>
+            </table>
+        </div>
+
+        <p><button class="button3">Usuń tabelę</button></p>
+
+        <p class="name"> Najlepsze marki aut:</p>
+        <ul class="brand">
+            <li class="brand__list">
+                BMW
+                <ul class="brand__listItem">
+                    <li class="brand__series">Seria 1</li>
+                    <li class="brand__series">Seria 2</li>
+                    <li class="brand__series">Seria 3</li>
+                </ul>
+            </li>
+
+            <li class="brand__list">
+                Mercedes-Benz
+                <ul class="brand__listItem">
+                    <li class="brand__series">Mercedes-Benz klasa A</li>
+                    <li class="brand__series">Mercedes-Benz klasa B</li>
+                    <li class="brand__series">Mercedes-Benz klasa C</li>
+                </ul>
+            </li>
+
+            <li class="brand__list">
+                Audi
+                <ul class="brand__listItem">
+                    <li class="brand__series">Audi 1</li>
+                    <li class="brand__series">Audi 2</li>
+                    <li class="brand__series">Audi 3</li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="end">
+        <p><strong>Dane kontaktowe:</strong></p>
+        <p>Stronę stworzył: <strong>Marcin Olendzki</strong></p>
+        <a href="mailto:marcin@drohiczyn.pl">
+            m-----------n.pl
+        </a>
+        <p><a href="tel:123456789">
+                123 456 789
+            </a></p>
+    </footer>
 </body>
 
 </html>
