@@ -1,26 +1,38 @@
-console.log("Cześć!");
+let formElement = document.querySelector(".js-form");
+let amountElement = document.querySelector(".js-amount");
+let currencyElement = document.querySelector(".js-currency");
+let resultElement = document.querySelector(".js-result");
 
-let button1 = document.querySelector(".button1");
-let button2 = document.querySelector(".button2");
-let button3 = document.querySelector(".button3");
-let header = document.querySelector(".header");
-let table = document.querySelector(".table")
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".themeName");
+let rateEUR = 4.6801;
+let rateUSD = 4.3043;
+let rateGBP = 5.3177;
+let rateTRY = 0.2170;
 
-button1.addEventListener("click", () => {
-    header.remove();
+formElement.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let amount = +amountElement.value;
+    let currency = currencyElement.value;
+
+    let result;
+
+    switch (currency) {
+        case "EUR":
+            result = amount / rateEUR
+            break;
+
+        case "USD":
+            result = amount / rateUSD
+            break;
+
+        case "GBP":
+            result = amount / rateGBP
+            break;
+            
+        case "TRY":
+            result = amount / rateTRY
+            break;
+    }
+
+    resultElement.innerHTML = `${amount.toFixed(2)}PLN = <strong>${result.toFixed(2)} ${currency}`
 });
-
-button2.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
-});
-
-button3.addEventListener("click", () => {
-    table.remove();
-});
-console.log(przycisk);
-console.log(przycisk2);
-
-
